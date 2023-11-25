@@ -1,5 +1,8 @@
 name: publish
 on: [push]
+permissions:
+  contents: read
+  packages: write
 jobs:
   publish-hello-docker-image:
     runs-on: ubuntu-latest
